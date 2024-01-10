@@ -188,10 +188,10 @@ int main(int argc, char *argv[])
 	string port = "\\\\.\\com4";
 #endif
 
-#ifdef linux
+#ifdef __linux__
 	string port = "/dev/ttyACM0";
 #endif
-
+	
 	switch (DisplaySamplesMenu())
 	{
 	case 1:

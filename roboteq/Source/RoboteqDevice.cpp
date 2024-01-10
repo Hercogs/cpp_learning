@@ -10,7 +10,7 @@
 #include <Windows.h>
 #endif
 
-#ifdef linux
+#ifdef __linux__
 #include <termios.h>
 #include <unistd.h>
 #endif
@@ -365,7 +365,7 @@ void sleepms(int milliseconds)
 }
 #endif
 
-#ifdef linux
+#ifdef __linux__
 int RoboteqDevice::Connect(string port)
 {
 	if (IsConnected())
